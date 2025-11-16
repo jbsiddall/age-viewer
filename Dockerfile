@@ -6,7 +6,7 @@ WORKDIR /src
 
 COPY . .
 
-RUN npm run setup
+RUN npm run setup && npm run build-back
 
 CMD ["npm", "run", "start"]
 
